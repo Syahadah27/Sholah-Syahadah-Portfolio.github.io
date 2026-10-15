@@ -307,3 +307,20 @@ button:focus-visible, a:focus-visible { outline: 3px solid #b5cba9; outline-offs
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; }
 }
+/* ===================================================
+   Perbaikan Tampilan Gambar (Mencegah Bayangan/Sisa Ruang)
+   =================================================== */
+
+.image-frame {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
